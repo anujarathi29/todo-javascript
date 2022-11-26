@@ -27,6 +27,7 @@ hr{
 #taskListItem{
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 ul{
@@ -36,4 +37,18 @@ ul{
 
 .strike_out {
     text-decoration: line-through;
+}
+
+#taskListText{
+    width: 100%;
+}
+
+#taskDeleteButton{
+    border: none;
+    background-color: white;
+    color: crimson;
+    font-weight: 500;
+    align-items: right;
+    
+
 }

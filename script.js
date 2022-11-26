@@ -7,15 +7,25 @@ function addTask(taskText){
     const taskListContainer = document.getElementById("taskListContainer")
     const taskContainer = document.createElement("li")
     taskContainer.id = "taskListItem"
+
     const taskCheckbox = document.createElement("input")
     taskCheckbox.type = "checkbox"
     taskCheckbox.id = "taskListCheckbox"
+
     const taskTextElement = document.createElement("p")
     taskTextElement.textContent = taskText
     taskTextElement.id = "taskListText"
+
+    const taskDeleteButton = document.createElement("button")
+    taskDeleteButton.textContent = "X"
+    taskDeleteButton.id = "taskDeleteButton"
+
+
     taskContainer.appendChild(taskCheckbox)
     taskContainer.appendChild(taskTextElement)
     taskListContainer.appendChild(taskContainer)
+    taskContainer.appendChild(taskDeleteButton)
+
 
     taskCheckbox.addEventListener("change", (e) => {
                 if (e.target.checked){
@@ -26,7 +36,15 @@ function addTask(taskText){
         }
 
     })
+
+    taskDeleteButton.addEventListener ("click", () => {
+
+        taskContainer.remove()
+    
+    })
+    
 }
+
 
 addTaskButton.addEventListener("click", () =>{
 
