@@ -1,0 +1,39 @@
+#parent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#addTaskContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+#addTaskInput{
+    width: 60%;
+}
+
+#addTaskButton{
+    width: 40%;
+}
+hr{
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+#taskListItem{
+    display: flex;
+    flex-direction: row;
+}
+
+ul{
+    padding: 0;
+    margin-top: 8px;
+}
+
+.strike_out {
+    text-decoration: line-through;
+}
